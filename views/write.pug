@@ -11,6 +11,31 @@ block content
         .d-flex.pt-3
           .col
             .content
+              textarea.form-control(name='contentEN')
           .col
             .content
+              textarea.form-control(name='contentKO')
     .col-2
+      #find-tutor-section
+        form(name='findTutorForm', onsubmit='fnFindTutor()')
+          .input-group.round
+            input.form-control(type='text', placeholder='튜터 찾기', name='search-tutor')
+        label 최근 제출 튜터
+      #tutor-list
+        - var list = [1,2,3]
+        each item in list
+          .card.text-center
+            .card-body
+              img(src='/assets/img/faces/face-0.jpg')
+              label Clare
+              button.btn.btn-link.heart-wrap
+                i.fa.fa-heart
+              .star-wrap
+                -var rating = [1,2,3,4,5];
+                each item in rating
+                  if(item < 4)
+                    span.star.check
+                  else
+                    span.star
+            .card-footer
+              button.btn.btn-primary 제출하기

@@ -118,4 +118,87 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0px 0px 8px lightgrey;
+  overflow: hidden;
+}
+#write-section textarea {
+  resize: none;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px;
+}
+.full-page:before,
+.full-page:after {
+  z-index: 0;
+}
+#find-tutor-section .input-group input[name="search-tutor"] {
+  background-image: url("/assets/svgs/search-solid.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-size: 1rem;
+}
+#find-tutor-section .input-group input[name="search-tutor"]::placeholder {
+  color: dimgray;
+}
+#find-tutor-section .input-group input[name="search-tutor"],
+#find-tutor-section label {
+  background-color: white;
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border-radius: 30px;
+  margin: 0.4rem 0;
+  color: dimgray;
+  font-size: 0.85rem;
+}
+#tutor-list {
+  height: calc(100vh - 154px);
+  overflow: auto;
+}
+#tutor-list .card {
+  border-radius: 30px;
+}
+#tutor-list .heart-wrap {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+#tutor-list .heart-wrap i {
+  color: darkgray;
+}
+#tutor-list .card-body {
+  border-radius: 30px;
+}
+#tutor-list .card-body img {
+  width: 110px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+#tutor-list .card-body label {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-transform: none;
+}
+#tutor-list .card-body .star-wrap span.star {
+  background-image: url("/assets/svgs/star-regular.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+#tutor-list .card-body .star-wrap span.star.check {
+  background-image: url("/assets/svgs/star-solid.svg");
+}
+#tutor-list .card-footer button {
+  border-radius: 15px;
+  width: 130px;
 }
