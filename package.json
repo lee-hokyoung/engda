@@ -1,0 +1,17 @@
+{
+  "name": "engda",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "local": "node ./bin/www",
+    "start": "npm install && pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  }
+}

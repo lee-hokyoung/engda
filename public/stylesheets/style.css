@@ -1,0 +1,121 @@
+.main-nav {
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 2.5rem;
+}
+.full-page:before {
+  background: transparent;
+}
+.full-page .full-page-background {
+  z-index: 0;
+}
+.sign-up-wrap p {
+  color: white;
+  font-size: 1.5rem;
+}
+.sign-up-wrap .division {
+  float: none;
+  margin: 0 auto 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.sign-up-wrap .division .line {
+  border-top: 1px solid #dfdfdf;
+  position: absolute;
+  top: 10px;
+  width: 45%;
+}
+.sign-up-wrap .division span {
+  color: white;
+  font-size: 17px;
+}
+.sign-up-wrap .division .line.l {
+  left: 0;
+}
+.sign-up-wrap .division .line.r {
+  right: 0;
+}
+.social-login-wrap button {
+  margin: 0 0.5rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-color: white;
+  color: darkblue;
+}
+.social-login-wrap button i {
+  font-size: 22px !important;
+}
+.main-tutor-wrap .title {
+  font-size: 1.7rem;
+  color: white;
+}
+.main-tutor-wrap {
+  margin-top: 70px;
+}
+.main-tutor-wrap .tutor-card {
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.main-tutor-wrap .tutor-card .tutor-photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70px;
+  margin: 0 auto;
+}
+.main-tutor-wrap .tutor-card .tutor-photo img {
+  width: 100%;
+}
+.side-menu {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.side-menu .list-group-item:first-child {
+  padding-bottom: 2rem;
+}
+.side-menu .list-group-item {
+  border-top: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none !important;
+  margin: 0;
+}
+.side-menu .list-group-item .border {
+  padding: 0.6rem;
+}
+.side-menu .list-group-item .border:hover {
+  background: white;
+}
+.side-menu .list-group-item a {
+  color: black;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+#write-section {
+  background: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+}
+#write-section .header-wrap {
+  border-bottom: 1px solid lightgray;
+  margin: 0 2rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+#write-section .bottom-shadow {
+  text-align: center;
+  padding-bottom: 1rem;
+  box-shadow: 0px 5px 10px lightgrey;
+}
+#write-section .header {
+}
+#write-section .content {
+  height: calc(100vh - 10rem - -12px);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 0px 8px lightgrey;
+}

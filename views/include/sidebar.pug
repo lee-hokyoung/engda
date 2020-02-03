@@ -1,0 +1,172 @@
+.sidebar(data-color="orange" data-image="/assets/img/sidebar-5.jpg")
+  //
+    Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+    Tip 2: you can also add an image using data-image tag
+  .sidebar-wrapper
+    .user
+      .photo
+        img(src="/assets/img/default-avatar.png")
+      .info
+        a.collapsed(data-toggle="collapse" href="#collapseExample")
+          span
+            | Tania Andrew
+            b.caret
+        #collapseExample.collapse
+          ul.nav
+            li
+              a.profile-dropdown(href="#pablo")
+                span.sidebar-mini MP
+                span.sidebar-normal My Profile
+            li
+              a.profile-dropdown(href="#pablo")
+                span.sidebar-mini EP
+                span.sidebar-normal Edit Profile
+            li
+              a.profile-dropdown(href="#pablo")
+                span.sidebar-mini S
+                span.sidebar-normal Settings
+    ul.nav
+      li.nav-item
+        a.nav-link(href="./dashboard.html")
+          i.nc-icon.nc-chart-pie-35
+          p Dashboard
+      li.nav-item
+        a.nav-link(data-toggle="collapse" href="#componentsExamples")
+          i.nc-icon.nc-app
+          p
+            | Components
+            b.caret
+        #componentsExamples.collapse
+          ul.nav
+            li.nav-item
+              a.nav-link(href="./components/buttons.html")
+                span.sidebar-mini B
+                span.sidebar-normal Buttons
+            li.nav-item
+              a.nav-link(href="./components/grid.html")
+                span.sidebar-mini GS
+                span.sidebar-normal Grid System
+            li.nav-item
+              a.nav-link(href="./components/panels.html")
+                span.sidebar-mini P
+                span.sidebar-normal Panels
+            li.nav-item
+              a.nav-link(href="./components/sweet-alert.html")
+                span.sidebar-mini SA
+                span.sidebar-normal Sweet Alert
+            li.nav-item
+              a.nav-link(href="./components/notifications.html")
+                span.sidebar-mini N
+                span.sidebar-normal Notifications
+            li.nav-item
+              a.nav-link(href="./components/icons.html")
+                span.sidebar-mini I
+                span.sidebar-normal Icons
+            li.nav-item
+              a.nav-link(href="./components/typography.html")
+                span.sidebar-mini T
+                span.sidebar-normal Typography
+      li.nav-item
+        a.nav-link(data-toggle="collapse" href="#formsExamples")
+          i.nc-icon.nc-notes
+          p
+            | Forms
+            b.caret
+        #formsExamples.collapse
+          ul.nav
+            li.nav-item
+              a.nav-link(href="./forms/regular.html")
+                span.sidebar-mini Rf
+                span.sidebar-normal Regular Forms
+            li.nav-item
+              a.nav-link(href="./forms/extended.html")
+                span.sidebar-mini Ef
+                span.sidebar-normal Extended Forms
+            li.nav-item
+              a.nav-link(href="./forms/validation.html")
+                span.sidebar-mini Vf
+                span.sidebar-normal Validation Forms
+            li.nav-item
+              a.nav-link(href="./forms/wizard.html")
+                span.sidebar-mini W
+                span.sidebar-normal Wizard
+      li.nav-item
+        a.nav-link(data-toggle="collapse" href="#tablesExamples")
+          i.nc-icon.nc-paper-2
+          p
+            | Tables
+            b.caret
+        #tablesExamples.collapse
+          ul.nav
+            li.nav-item
+              a.nav-link(href="./tables/regular.html")
+                span.sidebar-mini RT
+                span.sidebar-normal Regular Tables
+            li.nav-item
+              a.nav-link(href="./tables/extended.html")
+                span.sidebar-mini ET
+                span.sidebar-normal Extended Tables
+            li.nav-item
+              a.nav-link(href="./tables/bootstrap-table.html")
+                span.sidebar-mini BT
+                span.sidebar-normal Bootstrap Table
+            li.nav-item
+              a.nav-link(href="./tables/datatables.net.html")
+                span.sidebar-mini DT
+                span.sidebar-normal DataTables.net
+      li.nav-item
+        a.nav-link(data-toggle="collapse" href="#mapsExamples")
+          i.nc-icon.nc-pin-3
+          p
+            | Maps
+            b.caret
+        #mapsExamples.collapse
+          ul.nav
+            li.nav-item
+              a.nav-link(href="./maps/google.html")
+                span.sidebar-mini GM
+                span.sidebar-normal Google Maps
+            li.nav-item
+              a.nav-link(href="./maps/vector.html")
+                span.sidebar-mini VM
+                span.sidebar-normal Vector maps
+            li.nav-item
+              a.nav-link(href="./maps/fullscreen.html")
+                span.sidebar-mini FSM
+                span.sidebar-normal Full Screen Map
+      li.nav-item
+        a.nav-link(href="./charts.html")
+          i.nc-icon.nc-chart-bar-32
+          p Charts
+      li.nav-item
+        a.nav-link(href="./calendar.html")
+          i.nc-icon.nc-single-copy-04
+          p Calendar
+      li.nav-item
+        a.nav-link(data-toggle="collapse" href="#pagesExamples")
+          i.nc-icon.nc-puzzle-10
+          p
+            | Pages
+            b.caret
+        #pagesExamples.collapse
+          ul.nav
+            li.nav-item
+              a.nav-link(href="./pages/login.html")
+                span.sidebar-mini LP
+                span.sidebar-normal Login Page
+            li.nav-item
+              a.nav-link(href="./pages/register.html")
+                span.sidebar-mini RP
+                span.sidebar-normal Register Page
+            li.nav-item
+              a.nav-link(href="./pages/lock.html")
+                span.sidebar-mini LSP
+                span.sidebar-normal Lock Screen Page
+            li.nav-item
+              a.nav-link(href="./pages/user.html")
+                span.sidebar-mini UP
+                span.sidebar-normal User Page
+            li.nav-item
+              a.nav-link(href="#lbd")
+                span.sidebar-mini MCS
+                span.sidebar-normal More coming soon...
