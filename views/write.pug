@@ -28,8 +28,8 @@ block content
             .card-body
               img(src='/assets/img/faces/face-0.jpg')
               label Clare
-              button.btn.btn-link.heart-wrap
-                i.fa.fa-heart
+              button.btn.btn-link.heart-wrap(onclick='fnFavorate(this)')
+                i.fa.fa-heart(data-toggle='false')
               .star-wrap
                 -var rating = [1,2,3,4,5];
                 each item in rating
@@ -39,3 +39,5 @@ block content
                     span.star
             .card-footer
               button.btn.btn-primary 제출하기
+block append_js
+  script(src='/public_js/write.js')

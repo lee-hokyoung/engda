@@ -3,6 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.render("write", { title: "일기 쓰기", active: "write" });
+  res.render("tutors", { title: "잉다 튜터", active: "tutors" });
 });
 module.exports = router;

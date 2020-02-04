@@ -1,0 +1,36 @@
+extends layout
+block content
+  .row
+    .col
+      #tutor-section
+        h4.text-white 이달의 튜터
+        .row
+          - var list = [1,2,3,4,5,6];
+          each item in list
+            .col-4
+              .card
+                .card-header
+                  .d-flex.justify-content-between
+                    img(src='/assets/img/faces/face-0.jpg')
+                    .rating-wrap
+                      label Jake
+                      .star-wrap
+                        -var rating = [1,2,3,4,5];
+                        each item in rating
+                          if(item < 4)
+                            span.star.check
+                          else
+                            span.star
+                    button.btn.btn-link.heart-wrap(onclick='fnFavorate(this)')
+                      i.fa.fa-heart(data-toggle='false')
+                .card-body
+                  .tutor-intro
+                    .row
+                      .col-10
+                        span hello I'm jake i have 5 year experience in teaching. hello I'm jake i have 5 year experience in teachinghello I'm jake i have 5 year experience in teachinghello I'm jake i have 5 year experience in teaching
+                      .col-2
+                        button.btn.btn-link.tutor-link
+                          i.fa.fa-sign-out-alt
+
+block append_js
+  script(src='/public_js/tutors.js')

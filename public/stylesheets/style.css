@@ -157,7 +157,9 @@
 #tutor-list .card {
   border-radius: 30px;
 }
-#tutor-list .heart-wrap {
+#tutor-list .heart-wrap,
+#tutor-section .card-header button,
+.tutor-intro button {
   position: absolute;
   right: 10px;
   top: 100px;
@@ -173,19 +175,22 @@
 #tutor-list .card-body {
   border-radius: 30px;
 }
-#tutor-list .card-body img {
+#tutor-list .card-body img,
+#tutor-section .card-header img {
   width: 110px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
-#tutor-list .card-body label {
+#tutor-list .card-body label,
+#tutor-section .card-header label {
   font-size: 15px;
   font-weight: 700;
   color: black;
   text-transform: none;
 }
-#tutor-list .card-body .star-wrap span.star {
+#tutor-list .card-body .star-wrap span.star,
+#tutor-section .card-header .star-wrap span.star {
   background-image: url("/assets/svgs/star-regular.svg");
   background-size: 20px;
   background-repeat: no-repeat;
@@ -195,10 +200,55 @@
   display: inline-block;
 }
 
-#tutor-list .card-body .star-wrap span.star.check {
+#tutor-list .card-body .star-wrap span.star.check,
+#tutor-section .card-header .star-wrap span.star.check {
   background-image: url("/assets/svgs/star-solid.svg");
 }
 #tutor-list .card-footer button {
   border-radius: 15px;
   width: 130px;
+}
+#tutor-list button i.fa-heart[data-toggle="true"] {
+  color: red;
+}
+#tutor-section {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+}
+#tutor-section .card {
+  height: 300px;
+  margin-top: 50px;
+}
+#tutor-section .card-header img {
+  margin: 0;
+  top: -50px;
+  position: relative;
+  left: -20px;
+}
+#tutor-section .card-header .rating-wrap {
+  left: -100px;
+  position: relative;
+}
+#tutor-section .card-header button {
+  position: relative;
+  top: -22px;
+  right: -22px;
+  background-color: white !important;
+}
+#tutor-section .card-body {
+  margin-top: -50px;
+}
+.tutor-intro button.btn.btn-link.tutor-link {
+  background-image: url("/assets/svgs/sign-out-alt-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -25px;
+  right: -6px;
+  background-color: white !important;
+}
+.tutor-intro button.btn.btn-link.tutor-link:hover,
+.tutor-intro button.btn.btn-link.tutor-link:active {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
