@@ -72,13 +72,21 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.side-menu img {
+  width: 70px;
+  position: absolute;
+  top: -39px;
+  right: 40px;
+  z-index: 10;
 }
 .side-menu .list-group-item:first-child {
-  padding-bottom: 2rem;
+  padding: 1.5rem 1.25rem;
 }
 .side-menu .list-group-item {
   border-top: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
   border: none !important;
   margin: 0;
 }
@@ -282,4 +290,86 @@
 }
 .bg-lightgray {
   background-color: lightgray;
+}
+#community-wrap .img-wrap {
+  position: relative;
+}
+#community-wrap .img-wrap img:nth-child(1) {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+#community-wrap .img-wrap img:nth-child(2) {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  width: 80px;
+  height: 60px;
+}
+#community-wrap .img-wrap img:nth-child(3) {
+  position: absolute;
+  width: 28px;
+  height: 19px;
+  bottom: 40px;
+  left: 15px;
+}
+.text-card-wrap {
+  padding: 1.5rem;
+}
+.text-card-wrap .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #498865;
+  border-radius: 50%;
+}
+.text-card-wrap span {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.text-card-wrap label {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  text-transform: none;
+}
+.text-card-wrap .card {
+  margin: 0.5rem 3rem;
+  padding: 1.5rem;
+  background-color: lightgray;
+  border-radius: 0px;
+  border: none;
+  line-height: 1.5rem;
+}
+.text-card-wrap .card h6 {
+  text-transform: none;
+  max-height: 150px;
+  height: 150px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.text-card-wrap .reply-wrap {
+  margin-left: -140px;
+}
+.text-card-wrap .reply-wrap img {
+  width: 16px;
+}
+.text-card-wrap .show-more img {
+  width: 3px;
+}
+.gong-card-wrap {
+  width: 230px;
+  height: 230px;
+  background-color: lightgray;
+}
+.gong-card-wrap span {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  color: white;
+  font-size: 1.8rem;
 }
