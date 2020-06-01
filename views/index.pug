@@ -19,7 +19,7 @@ html(lang="en")
     .wrapper.wrapper-full-page
       nav.navbar.navbar-expand-lg.navbar-transparent.navbar-absolute.main-nav
         .container
-          .navbar-wrapper
+          .navbar-wrapper.d-block
             a.navbar-brand(href="#pablo") ENGLISH DIARY
             button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation")
               span.navbar-toggler-bar.burger-lines
@@ -28,11 +28,11 @@ html(lang="en")
           #navbar.collapse.navbar-collapse.justify-content-start
             ul.navbar-nav
               li.nav-item
-                a.nav-link(href="#tutor") 잉다 튜터
+                a.nav-link(href="/tutors") 잉다 튜터
               li.nav-item
                 a.nav-link(href="#course") 수강권
               li.nav-item
-                a.nav-link(href="#community") 커뮤니티
+                a.nav-link(href="/community") 커뮤니티
               li.nav-item
                 a.nav-link(href="#service") 부가서비스
           .collapse.navbar-collapse.justify-content-end
@@ -43,10 +43,10 @@ html(lang="en")
                 a.nav-link(href='#cs_center') 고객센터
               li.nav-item
                 a.nav-link(href='#my_page') 튜터회원
-      .full-page.lock-page(data-color="" data-image="/public_img/main.png")
+      .full-page.lock-page(data-color="" data-image="/public_img/main2.png")
         .content
-          .container
-            .col-md-8.mr-auto
+          .container-fluid
+            .col-md-7.mr-auto
               .card.card-lock.text-center.card-plain
                 .card-body.sign-up-wrap
                   p 잉다와 함께 영어공부 시작해요 !

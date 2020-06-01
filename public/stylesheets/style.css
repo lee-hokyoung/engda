@@ -1,6 +1,6 @@
 .main-nav {
   background-color: rgba(255, 255, 255, 0.35);
-  padding: 2.5rem;
+  max-height: inherit;
 }
 .full-page:before {
   background: transparent;
@@ -72,13 +72,21 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.side-menu img {
+  width: 70px;
+  position: absolute;
+  top: -39px;
+  right: 40px;
+  z-index: 10;
 }
 .side-menu .list-group-item:first-child {
-  padding-bottom: 2rem;
+  padding: 1.5rem 1.25rem;
 }
 .side-menu .list-group-item {
   border-top: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
   border: none !important;
   margin: 0;
 }
@@ -157,7 +165,9 @@
 #tutor-list .card {
   border-radius: 30px;
 }
-#tutor-list .heart-wrap {
+#tutor-list .heart-wrap,
+#tutor-section .card-header button,
+.tutor-intro button {
   position: absolute;
   right: 10px;
   top: 100px;
@@ -173,19 +183,22 @@
 #tutor-list .card-body {
   border-radius: 30px;
 }
-#tutor-list .card-body img {
+#tutor-list .card-body img,
+#tutor-section .card-header img {
   width: 110px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
-#tutor-list .card-body label {
+#tutor-list .card-body label,
+#tutor-section .card-header label {
   font-size: 15px;
   font-weight: 700;
   color: black;
   text-transform: none;
 }
-#tutor-list .card-body .star-wrap span.star {
+#tutor-list .card-body .star-wrap span.star,
+#tutor-section .card-header .star-wrap span.star {
   background-image: url("/assets/svgs/star-regular.svg");
   background-size: 20px;
   background-repeat: no-repeat;
@@ -195,10 +208,168 @@
   display: inline-block;
 }
 
-#tutor-list .card-body .star-wrap span.star.check {
+#tutor-list .card-body .star-wrap span.star.check,
+#tutor-section .card-header .star-wrap span.star.check {
   background-image: url("/assets/svgs/star-solid.svg");
 }
 #tutor-list .card-footer button {
   border-radius: 15px;
   width: 130px;
+}
+#tutor-list button i.fa-heart[data-toggle="true"] {
+  color: red;
+}
+#tutor-section {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+}
+#tutor-section .card {
+  height: 300px;
+  margin-top: 50px;
+}
+#tutor-section .card-header img {
+  margin: 0;
+  top: -50px;
+  position: relative;
+  left: -20px;
+}
+#tutor-section .card-header .rating-wrap {
+  left: -100px;
+  position: relative;
+}
+#tutor-section .card-header button {
+  position: relative;
+  top: -22px;
+  right: -22px;
+  background-color: white !important;
+}
+#tutor-section .card-body {
+  margin-top: -50px;
+}
+.tutor-intro button.btn.btn-link.tutor-link {
+  background-image: url("/assets/svgs/sign-out-alt-solid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -25px;
+  right: -6px;
+  background-color: white !important;
+}
+.tutor-intro button.btn.btn-link.tutor-link:hover,
+.tutor-intro button.btn.btn-link.tutor-link:active {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+#community-wrap {
+  border-radius: 50px;
+}
+#community-wrap .round-card {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  width: 400px;
+}
+#community-wrap .round-card img {
+  width: 80px;
+  height: 80px;
+  margin-left: 80px;
+}
+#community-wrap .round-card p {
+  font-size: 1.2rem;
+}
+#community-wrap .round-card span {
+  border-radius: 50%;
+  background-color: #498865;
+  color: white;
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.bg-lightgray {
+  background-color: lightgray;
+}
+#community-wrap .img-wrap {
+  position: relative;
+}
+#community-wrap .img-wrap img:nth-child(1) {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+#community-wrap .img-wrap img:nth-child(2) {
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  width: 80px;
+  height: 60px;
+}
+#community-wrap .img-wrap img:nth-child(3) {
+  position: absolute;
+  width: 28px;
+  height: 19px;
+  bottom: 40px;
+  left: 15px;
+}
+.text-card-wrap {
+  padding: 1.5rem;
+}
+.text-card-wrap .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #498865;
+  border-radius: 50%;
+}
+.text-card-wrap span {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.text-card-wrap label {
+  margin-left: 20px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  text-transform: none;
+}
+.text-card-wrap .card {
+  margin: 0.5rem 3rem;
+  padding: 1.5rem;
+  background-color: lightgray;
+  border-radius: 0px;
+  border: none;
+  line-height: 1.5rem;
+}
+.text-card-wrap .card h6 {
+  text-transform: none;
+  max-height: 150px;
+  height: 150px;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.text-card-wrap .reply-wrap {
+  margin-left: -140px;
+}
+.text-card-wrap .reply-wrap img {
+  width: 16px;
+}
+.text-card-wrap .show-more img {
+  width: 3px;
+}
+.gong-card-wrap {
+  width: 230px;
+  height: 230px;
+  background-color: lightgray;
+}
+.gong-card-wrap span {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  color: white;
+  font-size: 1.8rem;
 }

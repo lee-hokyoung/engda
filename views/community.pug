@@ -1,0 +1,82 @@
+extends layout
+block content
+  .row
+    .col
+      .card#community-wrap.p-3
+        .card-header
+          .row.mb-5
+            .col-4
+              .round-card.d-flex.justify-content-between
+                img.my-auto(src='/public_img/question_1.png')
+                p.my-auto 이런표현 영어로 어떻게 할까?
+                span 50
+            .col-4
+              .round-card.d-flex.justify-content-between.bg-lightgray
+                .img-wrap
+                  img(src='/public_img/chat_1.png')
+                  img(src='/public_img/chat_2.png')
+                  img(src='/public_img/chat_3.png')
+                p.my-auto 수다방
+                span 129
+            .col-4
+              .round-card.d-flex.justify-content-between
+                img(src='/public_img/gongstagram.png', style='position:relative; bottom:-40px')
+                p.my-auto 공스타그램
+                span 50
+          .row
+            // 이런 표현 영어로 어떻게?
+            .col-4
+              - var card_list = [1, 2, 3, 4, 5];
+              each item in card_list
+                .row
+                  .col
+                    .text-card-wrap
+                      .d-flex.justify-content-start
+                        .circle
+                        span Name Sumame
+                        label 11h ago
+                      .card
+                        h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididung ut ero labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exerciatation
+                        .d-flex.justify-content-between
+                          .heart-wrap
+                            i.fa.fa-heart
+                            span 609
+                          .reply-wrap
+                            img(src='/public_img/reply-icon.png')
+                            span 120
+                          .show-more
+                            img(src='/public_img/showMore-icon.png')
+            // 수다방
+            .col-4
+              - var card_list = [1, 2, 3, 4, 5];
+              each item in card_list
+                .row
+                  .col
+                    .text-card-wrap
+                      .d-flex.justify-content-start
+                        .circle
+                        span Name Sumame
+                        label 11h ago
+                      .card
+                        h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididung ut ero labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exerciatation
+                        .d-flex.justify-content-between
+                          .heart-wrap
+                            i.fa.fa-heart
+                            span 609
+                          .reply-wrap
+                            img(src='/public_img/reply-icon.png')
+                            span 120
+                          .show-more
+                            img(src='/public_img/showMore-icon.png')
+            // 공스타그램
+            .col-4
+              - var gong_list = [1, 2, 3, 4, 5];
+              each item in gong_list
+                .row.mx-1.my-3
+                  .col-6
+                    .gong-card-wrap
+                      span 0 : 21 pm
+                  .col-6
+                    .gong-card-wrap
+                      span 0 : 21 pm
+        .card-body
